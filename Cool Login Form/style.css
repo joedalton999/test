@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(219, 223, 226); /* Soft background color */
+    font-family: Arial, sans-serif;
+}
+
+.neumorphic {
+    background:  rgb(219, 223, 226);
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgb(127, 128, 129), -10px -10px 20px aliceblue;
+    /* for outer shadow and inner light */
+}
+
+.neumorphic-inset {
+    background: aliceblue;
+    border-radius: 20px;
+    box-shadow: inset 10px 10px 20px rgb(127, 128, 129), inset -10px -10px 20px aliceblue;
+    /* Insert shadow */
+}
+
+.neumorphic-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(69, 73, 73);
+    margin-bottom: 20px;
+}
+
+.neumorphic-input {
+    padding: 15px;
+    width: 80%;
+    font-size: 16px;
+    color: rgb(217, 219, 219);
+    border: none;
+    margin-bottom: 25px;
+}
+
+.neumorphic-input::placeholder {
+    color: rgb(86, 88, 88);
+}
+
+.neumorphic-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    color: rgb(41, 184, 184)n;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.neumorphic-button:active {
+    box-shadow: inset 5px 5px 10px rgb(133, 133, 134), inset -5px -5px 10px rgb(245, 243, 243);
+    /* Pressed effect */
+}
